@@ -41,6 +41,7 @@ var server = http.createServer(function(request, response){
         break
       }
     }
+    
     console.log(foundUser)
     if(foundUser){
       string = string.replace('__password__', foundUser.password)
